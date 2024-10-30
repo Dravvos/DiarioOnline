@@ -1,0 +1,51 @@
+name: Deploy to DiarioOnline
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '8.x.x'
+    
+    - name: Restore dependencies
+      run: dotnet restore ./DiarioOnline.sln
+    
+    - name: Build
+      run: dotnet build ./DiarioOnline.sln -c Release --no-restore
+    
+    - name: Publish API
+      run: dotnet publish ./DiarioOnline.API/DiarioOnline.API.csproj -c Release --no-build -o ./publish/api
+
+    - name: Publish WEB
+      run: dotnet publish ./DiarioOnline.Web/DiarioOnline.Web.csproj -c Release --no-build -o ./publish/web
+    
+    - name: Deploy to DiarioOnline
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.VM_HOST }}
+        username: ${{ secrets.VM_USERNAME }}
+        password: ${{ secrets.VM_PASSWORD }}
+        source: './publish'
+        target: '/home/capitao-tchaka/repos/DiarioOnline/Release/net8.0'
+        port: 22
+    
+    - name: Restart service
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{secrets.VM_HOST}}
+        username: ${{secrets.VM_USERNAME}}
+        password: ${{secrets.VM_PASSWORD}}
+        script: |
+          echo "${{ secrets.VM_PASSWORD }}" | sudo -S systemctl restart diario-online-web.service
+          echo "${{ secrets.VM_PASSWORD }}" | sudo -S systemctl restart diario-online-api.service
+      env:
+        VM_PASSWORD: ${{ secrets.VM_PASSWORD }}
