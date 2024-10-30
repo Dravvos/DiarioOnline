@@ -1,0 +1,6 @@
+@DiarioOnline_HostAddress = http://localhost:5010
+
+GET {{DiarioOnline_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "7tNtRXqaZn8hxpfjGh+G2gMYzhvDb8ynssYgAQXIiY0=",
+  "Source": "DiarioOnline.API",
+  "BasePath": "_content/DiarioOnline.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

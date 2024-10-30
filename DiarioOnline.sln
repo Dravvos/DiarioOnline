@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiarioOnline.Web", "DiarioOnline.Web\DiarioOnline.Web.csproj", "{8CF489C5-DC8F-4588-89D1-721987FD26DB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A7BCA3FF-1AB8-4C81-8B13-312A44E63EBC} = {A7BCA3FF-1AB8-4C81-8B13-312A44E63EBC}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiarioOnline.DTO", "DiarioOnline.DTO\DiarioOnline.DTO.csproj", "{A7BCA3FF-1AB8-4C81-8B13-312A44E63EBC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiarioOnline.Common", "DiarioOnline.Common\DiarioOnline.Common.csproj", "{0FE5A727-6BDF-4CCF-B03B-A3C956FCF479}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiarioOnline.BLL", "DiarioOnline.BLL\DiarioOnline.BLL.csproj", "{E0A4C304-1B7E-43A0-BC0E-3C06ACE8E207}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiarioOnline.API", "DiarioOnline.API\DiarioOnline.API.csproj", "{3CC84E03-8CB0-4164-8E16-5E4A36222CF3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{354E8FDF-37DE-4A26-9AFE-609C858A3613}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiarioOnline.Data", "DiarioOnline.Data\DiarioOnline.Data.csproj", "{EE7587C2-03F9-48EB-AE1D-F3D6380920E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CF489C5-DC8F-4588-89D1-721987FD26DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CF489C5-DC8F-4588-89D1-721987FD26DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CF489C5-DC8F-4588-89D1-721987FD26DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CF489C5-DC8F-4588-89D1-721987FD26DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7BCA3FF-1AB8-4C81-8B13-312A44E63EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7BCA3FF-1AB8-4C81-8B13-312A44E63EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7BCA3FF-1AB8-4C81-8B13-312A44E63EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7BCA3FF-1AB8-4C81-8B13-312A44E63EBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FE5A727-6BDF-4CCF-B03B-A3C956FCF479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FE5A727-6BDF-4CCF-B03B-A3C956FCF479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FE5A727-6BDF-4CCF-B03B-A3C956FCF479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FE5A727-6BDF-4CCF-B03B-A3C956FCF479}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0A4C304-1B7E-43A0-BC0E-3C06ACE8E207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0A4C304-1B7E-43A0-BC0E-3C06ACE8E207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0A4C304-1B7E-43A0-BC0E-3C06ACE8E207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0A4C304-1B7E-43A0-BC0E-3C06ACE8E207}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CC84E03-8CB0-4164-8E16-5E4A36222CF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CC84E03-8CB0-4164-8E16-5E4A36222CF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CC84E03-8CB0-4164-8E16-5E4A36222CF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CC84E03-8CB0-4164-8E16-5E4A36222CF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE7587C2-03F9-48EB-AE1D-F3D6380920E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE7587C2-03F9-48EB-AE1D-F3D6380920E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE7587C2-03F9-48EB-AE1D-F3D6380920E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE7587C2-03F9-48EB-AE1D-F3D6380920E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D916270-A696-487A-819D-951B416FAF41}
+	EndGlobalSection
+EndGlobal

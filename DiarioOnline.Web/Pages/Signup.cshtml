@@ -1,0 +1,54 @@
+﻿@page
+@model DiarioOnline.Web.Pages.SignupModel
+
+<link rel="stylesheet" href="~/css/signup.css" asp-append-version="true" />
+
+<div class="d-flex justify-content-center">
+    <div class="box align-self-center">
+        <form method="post">
+            <div class="input-box">
+                <h2>Sign Up</h2>
+                <input asp-for="Usuario.UserName" required>
+                <span asp-validation-for="Usuario.UserName">Usuário</span>
+                <i></i>
+            </div>
+
+            <div class="input-box">
+                <input asp-for="Usuario.Nome" required>
+                <span asp-validation-for="Usuario.Nome">Nome</span>
+                <i></i>
+            </div>
+            <div class="input-box">
+                <input asp-for="Usuario.Hash" type="password" required>
+                <span asp-validation-for="Usuario.Hash">Senha</span>
+                <i></i>
+            </div>
+            <div class="input-box">
+                <input id="passwordRepeat" type="password" required>
+                <span asp-validation-for="Usuario.Hash">Repetir Senha</span>
+                <i></i>
+            </div>
+            <input class="color-change" id="btnSignUp" type="submit" value="Sign Up">
+            <div class="links">
+                <a href="#">Esqueceu sua senha?</a>
+                <a asp-page="Login">Login</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#btnSignUp').on('click', function (event) {
+            if ($('#passwordRepeat').val() !== $('#Usuario_Hash').val()) {
+                event.preventDefault();
+                console.log('As senhas não coincidem');
+                global.ui.warning('As senhas não coincidem');
+                
+            }
+        })
+    })
+    
+    
+    
+</script>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\DiarioOnline.Web.props" />
+</Project>

@@ -1,0 +1,15 @@
+D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Data.NoSQL\bin\Release\net8.0\DiarioOnline.Data.deps.json
+D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Data.NoSQL\bin\Release\net8.0\DiarioOnline.Data.runtimeconfig.json
+D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Data.NoSQL\bin\Release\net8.0\DiarioOnline.Data.dll
+D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Data.NoSQL\bin\Release\net8.0\DiarioOnline.Data.pdb
+D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Data.NoSQL\obj\Release\net8.0\DiarioOnline.Data.csproj.AssemblyReference.cache
+D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Data.NoSQL\obj\Release\net8.0\DiarioOnline.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Data.NoSQL\obj\Release\net8.0\DiarioOnline.Data.AssemblyInfoInputs.cache
+D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Data.NoSQL\obj\Release\net8.0\DiarioOnline.Data.AssemblyInfo.cs
+D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Data.NoSQL\obj\Release\net8.0\DiarioOnline.Data.csproj.CoreCompileInputs.cache
+D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Data.NoSQL\obj\Release\net8.0\DiarioOnline.Data.sourcelink.json
+D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Data.NoSQL\obj\Release\net8.0\DiarioOnline.Data.dll
+D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Data.NoSQL\obj\Release\net8.0\refint\DiarioOnline.Data.dll
+D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Data.NoSQL\obj\Release\net8.0\DiarioOnline.Data.pdb
+D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Data.NoSQL\obj\Release\net8.0\DiarioOnline.Data.genruntimeconfig.cache
+D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Data.NoSQL\obj\Release\net8.0\ref\DiarioOnline.Data.dll

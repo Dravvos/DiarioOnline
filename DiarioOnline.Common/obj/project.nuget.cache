@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "X13U4AgzfTJjYZeIiQjpc855e8Gss0NA1GLOiOHyjwahaCtSSsKCQVhAsoEyBYQ0AtUkGNe1btOS6JuvYlcIYQ==",
+  "success": true,
+  "projectFilePath": "D:\\Microsoft Visual Studio\\source\\repos\\DiarioOnline\\DiarioOnline.Common\\DiarioOnline.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Daniel\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
+    "C:\\Users\\Daniel\\.nuget\\packages\\mapster\\7.4.0\\mapster.7.4.0.nupkg.sha512",
+    "C:\\Users\\Daniel\\.nuget\\packages\\mapster.core\\1.2.1\\mapster.core.1.2.1.nupkg.sha512"
+  ],
+  "logs": []
+}

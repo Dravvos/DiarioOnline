@@ -1,0 +1,392 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    padding: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+    .timeline-item .timeline-content {
+        background: #28292D;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        position: relative;
+        z-index: 1;
+        color: white;
+    }
+
+    .timeline-item::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        height: 100%;
+        width: 2px;
+        background: #007bff;
+        z-index: 0;
+    }
+
+    .timeline-item .date {
+        font-size: 1rem;
+        color: #999;
+    }
+
+.timeline-image {
+    max-width: 600px;
+    max-height: 400px
+}
+
+@media (max-width: 768px) {
+
+    .timeline-item .timeline-content {
+        font-size: 20px;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.box {
+    position: relative;
+    width: 700px;
+    min-height: 500px;
+    background: #1c1c1c;
+    border-radius: 50px 5px;
+    overflow: hidden;
+    justify-content: center;
+    place-self: center;
+    justify-self: center;
+    align-self: center;
+}
+
+    .box::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 700px;
+        height: 500px;
+        background: linear-gradient(60deg, transparent, #45f3ff, #45f3ff);
+        transform-origin: bottom right;
+        animation: animate 6s linear infinite;
+    }
+
+    .box::after {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 700px;
+        height: 500px;
+        background: linear-gradient(60deg, transparent, #d9138a, #d9138a);
+        transform-origin: bottom right;
+        animation: animate 6s linear infinite;
+        animation-delay: -3s;
+    }
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.form {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    inset: 2px;
+    border-radius: 50px 5px;
+    background: #28292d;
+    z-index: 10;
+    padding: 30px 30px;
+    align-items: center;
+}
+
+.h2 {
+    color: #45f3ff;
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 300px;
+    margin-top: 20px;
+}
+
+    .input-box input {
+        position: relative;
+        width: 100%;
+        padding: 20px 10px 10px;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 1em;
+        letter-spacing: .05em;
+        z-index: 10;
+    }
+
+    .input-box textarea {
+        position: relative;
+        background: rgba(69, 243, 255, .5);
+        width: 100%;
+        padding: 20px 10px 10px;
+        background: transparent;
+        color: white;
+        border: none;
+        outline: none;
+        font-size: 1em;
+        letter-spacing: .05em;
+        z-index: 10;
+    }
+
+.color-change {
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+    .color-change:hover {
+        transform: translateZ(0) scale(1.05);
+        background: linear-gradient(90deg, #45f3ff, #d9138a);
+        opacity: .8;
+    }
+
+input[type="submit"] {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: #45f3ff;
+    padding: 5px;
+    margin-top: 25px;
+    border-radius: 90px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 6px 25px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+    input[type="submit"]:active {
+        background: linear-gradient(90deg, #45f3ff, #d9138a);
+        opacity: .8;
+    }
+
+.input-box span {
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    pointer-events: none;
+    letter-spacing: .05em;
+    transition: .5s;
+}
+
+
+
+.input-box textarea:valid ~ span,
+.input-box textarea:focus ~ span {
+    color: #45f3ff !important;
+    transform: translateX(-10px) translateY(-30px);
+    font-size: .75em;
+}
+
+.input-box i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: rgb(69, 243, 255);
+    border-radius: 4px;
+    transition: .5s;
+    pointer-events: none;
+    z-index: 9;
+}
+
+.input-box textarea:valid ~ i,
+.input-box textarea:focus ~ i {
+    color: white;
+    background: rgba(69, 243, 255, .5);
+}
+
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+    .links a {
+        margin: 25px 0;
+        font-size: 1em;
+        color: #8f8f8f;
+        text-decoration: none;
+    }
+
+        .links a:hover,
+        .links a:nth-child(2) {
+            color: #45f3ff;
+        }
+
+            .links a:nth-child(2):hover {
+                color: #d9138a;
+            }
+
+.input-file {
+    background-color: #45F3FF;
+    opacity: .4;
+    color: black;
+    font-weight: 500;
+    border-radius: 0px;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin: 10px 0px;
+    border-width: 1px;
+    box-shadow: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+    .input-file:hover {
+        transform: translateZ(0) scale(1.05);
+        background: linear-gradient(90deg, #45f3ff, #d9138a);
+        opacity: .6;
+        box-shadow: 5px 4px 10px;
+    }
+
+
+/*Media Queries*/
+
+
+
+@media(max-width:375px) {
+    .h2 {
+        font-size: 40px;
+    }
+
+    .box {
+        position: relative;
+        width: 280px;
+        height: 460px;
+        background: #1c1c1c;
+        border-radius: 50px 5px;
+        overflow: hidden;
+        justify-content: center;
+        place-self: center;
+        justify-self: center;
+        align-self: center;
+    }
+
+        .box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 300px;
+            height: 460px;
+            background: linear-gradient(60deg, transparent, #45f3ff, #45f3ff);
+            transform-origin: bottom right;
+            animation: animate 6s linear infinite;
+        }
+
+        .box::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 300px;
+            height: 460px;
+            background: linear-gradient(60deg, transparent, #d9138a, #d9138a);
+            transform-origin: bottom right;
+            animation: animate 6s linear infinite;
+            animation-delay: -3s;
+        }
+
+
+    .input-box {
+        position: relative;
+        width: 250px;
+        margin-top: 5px;
+    }
+
+        .input-box input {
+            position: relative;
+            width: 80%;
+            padding: 20px 10px 10px;
+            background: transparent;
+            border: none;
+            outline: none;
+            font-size: 1em;
+            letter-spacing: .05em;
+            z-index: 10;
+        }
+
+        .input-box textarea {
+            position: relative;
+            background: rgba(69, 243, 255, .5);
+            width: 100%;
+            padding: 20px 10px 10px;
+            background: transparent;
+            color: white;
+            border: none;
+            outline: none;
+            font-size: 1em;
+            letter-spacing: .05em;
+            z-index: 10;
+        }
+
+        .input-box span {
+            position: absolute;
+            left: 0;
+            padding: 30px 20px;
+            font-size: 1.3em;
+            color: #8f8f8f;
+            pointer-events: none;
+            letter-spacing: .05em;
+            transition: .5s;
+        }
+
+        .input-box textarea:valid ~ span,
+        .input-box textarea:focus ~ span {
+            color: #45f3ff !important;
+            transform: translateX(-10px) translateY(-30px);
+            font-size: .9em;
+        }
+
+    .links {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+    }
+
+    .timeline-image {
+        max-width: 300px;
+        max-height: 100px
+    }
+
+}
+@media(max-width<=768px){
+
+    .timeline-image {
+        max-width: 500px;
+        max-height: 200px
+    }
+}

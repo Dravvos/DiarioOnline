@@ -1,0 +1,51 @@
+﻿@page
+@model DiarioOnline.Web.Pages.RegistroDiario.CreateModel
+
+<head>
+    <link rel="stylesheet" href="/css/registroDiario.css" asp-append-version="true" />
+</head>
+
+
+<div class="links">
+    <a class="link" asp-page="Index">Olhar Registros do diário</a>
+</div>
+
+<div class="box container">
+    <form class="form" method="post" enctype="multipart/form-data">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="input-box">
+            <h2 class="h2">Criar registro</h2>
+            <textarea asp-for="RegistroDiario.Registro" required></textarea>
+            <span>Registro</span>
+            <i id="fundoInput"></i>
+        </div>
+        <span class="text-danger mt-1" asp-validation-for="RegistroDiario.Registro"></span>
+
+        <div class="input-box text-center">
+            <label asp-for="RegistroDiario.MidiaRegistro" class="input-file">selecionar mídia</label>
+            <input id="RegistroDiario_MidiaRegistro" onchange="exibirImagem()" name="RegistroDiario.MidiaRegistro" hidden type="file">
+
+        </div>
+        <span class="text-danger mt-1" asp-validation-for="RegistroDiario.MidiaRegistro"></span>
+        <img src="data:image/jpeg;base64,@Model.RegistroDiario.MidiaRegistroBase64" style="width:100px; height:100px" id="imgPreview" />
+        <input class="color-change" value="Criar registro" type="submit"/>
+
+    </form>
+</div>
+
+<script>
+    function exibirImagem() {
+        var reader = new FileReader();
+        reader.readAsDataURL(document.getElementById('RegistroDiario_MidiaRegistro').files[0]);
+        reader.onload = function (e) {
+            document.getElementById("imgPreview").src = e.target.result;
+        }
+    }
+
+
+</script>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
