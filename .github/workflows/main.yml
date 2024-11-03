@@ -38,7 +38,7 @@ jobs:
         username: ${{ secrets.VM_USERNAME }}
         password: ${{ secrets.VM_PASSWORD }}
         source: './publish/web'
-        target: '/var/www/html/DiarioOnline/web'
+        target: '/var/www/html/DiarioOnline'
         port: 22
 
 
@@ -49,7 +49,7 @@ jobs:
         username: ${{ secrets.VM_USERNAME }}
         password: ${{ secrets.VM_PASSWORD }}
         source: './publish/api'
-        target: '/var/www/html/DiarioOnline/api'
+        target: '/var/www/html/DiarioOnline'
         port: 22
     
     - name: Restart service
