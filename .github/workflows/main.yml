@@ -28,6 +28,9 @@ jobs:
     - name: Publish WEB
       run: dotnet publish ./DiarioOnline.Web/DiarioOnline.Web.csproj -c Release --no-build -o ./publish/web
     
+    - name: Create tarball
+      run: tar --no-same-permissions -cvf publish.tar ./publish
+      
     - name: Deploy to DiarioOnline
       uses: appleboy/scp-action@master
       with:
