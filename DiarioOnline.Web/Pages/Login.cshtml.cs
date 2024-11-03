@@ -25,14 +25,7 @@ namespace DiarioOnline.Web.Pages
 
         [BindProperty]
         public LoginDTO User { get; set; } = default!;
-
-        [BindProperty]
-        public string Login { get; set; }
-        //statusCode:int
-        //value: T
-        //contentTypes:[]
-        //declaredType:null
-        //formatters:[]
+        
         public IActionResult OnPost()
         {
             ModelState.Clear();
