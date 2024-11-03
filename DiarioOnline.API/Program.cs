@@ -5,6 +5,7 @@ using DiarioOnline.Data.Context;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using DiarioOnline.API;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -79,7 +80,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseMiddleware<CustomMiddleware>();
 
 app.UseCors(builder => builder.AllowAnyOrigin());
 app.UseCors(builder => builder.AllowAnyHeader());
