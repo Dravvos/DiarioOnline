@@ -35,7 +35,7 @@ jobs:
         username: ${{ secrets.VM_USERNAME }}
         password: ${{ secrets.VM_PASSWORD }}
         source: './publish'
-        target: '/home/capitao-tchaka/repos/DiarioOnline/Release/net8.0'
+        target: '/var/www/html/DiarioOnline'
         port: 22
     
     - name: Restart service
