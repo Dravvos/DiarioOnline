@@ -31,14 +31,25 @@ jobs:
     - name: Create tarball
       run: tar --no-same-permissions -cvf publish.tar ./publish
       
-    - name: Deploy to DiarioOnline
+    - name: Deploy to DiarioOnline Web
       uses: appleboy/scp-action@master
       with:
         host: ${{ secrets.VM_HOST }}
         username: ${{ secrets.VM_USERNAME }}
         password: ${{ secrets.VM_PASSWORD }}
-        source: './publish'
-        target: '/var/www/html/DiarioOnline'
+        source: './publish/web'
+        target: '/var/www/html/DiarioOnline/web'
+        port: 22
+
+
+    - name: Deploy to DiarioOnline API
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.VM_HOST }}
+        username: ${{ secrets.VM_USERNAME }}
+        password: ${{ secrets.VM_PASSWORD }}
+        source: './publish/api'
+        target: '/var/www/html/DiarioOnline/api'
         port: 22
     
     - name: Restart service
