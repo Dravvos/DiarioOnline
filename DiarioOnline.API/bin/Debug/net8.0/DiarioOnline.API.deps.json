@@ -1019,7 +1019,10 @@
           "System.IdentityModel.Tokens.Jwt": "7.1.2"
         },
         "runtime": {
-          "DiarioOnline.BLL.dll": {}
+          "DiarioOnline.BLL.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "DiarioOnline.Common/1.0.0": {
@@ -1028,7 +1031,10 @@
           "Mapster": "7.4.0"
         },
         "runtime": {
-          "DiarioOnline.Common.dll": {}
+          "DiarioOnline.Common.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "DiarioOnline.Data/1.0.0": {
@@ -1039,7 +1045,10 @@
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
-          "DiarioOnline.Data.dll": {}
+          "DiarioOnline.Data.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "DiarioOnline.DTO/1.0.0": {
@@ -1047,7 +1056,10 @@
           "Microsoft.AspNetCore.Http": "2.2.2"
         },
         "runtime": {
-          "DiarioOnline.DTO.dll": {}
+          "DiarioOnline.DTO.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

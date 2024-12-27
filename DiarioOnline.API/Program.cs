@@ -73,7 +73,7 @@ builder.Services.AddAuthentication(options =>
 builder.Services.AddAuthorization();
 
 var app = builder.Build();
-
+app.UseMiddleware<CustomMiddleware>();
 app.UseSwagger();
 app.UseSwaggerUI();
 // Configure the HTTP request pipeline.
@@ -86,12 +86,10 @@ else
 {
     app.UseHttpsRedirection();
 }
-app.UseMiddleware<CustomMiddleware>();
 
 app.UseCors(builder => builder.AllowAnyOrigin());
 app.UseCors(builder => builder.AllowAnyHeader());
 app.UseCors(builder => builder.AllowAnyMethod());
-
 
 app.UseAuthentication();
 app.UseAuthorization();

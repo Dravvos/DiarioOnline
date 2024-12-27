@@ -309,3 +309,7 @@ D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.API\obj\Debug\
 D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.API\obj\Debug\net8.0\DiarioOnline.API.genruntimeconfig.cache
 D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.API\obj\Debug\net8.0\ref\DiarioOnline.API.dll
 D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.API\obj\Debug\net8.0\DiarioOnline.API.sourcelink.json
+D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.API\bin\Debug\net8.0\DiarioOnline.API.staticwebassets.endpoints.json
+D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.API\obj\Debug\net8.0\staticwebassets\msbuild.DiarioOnline.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

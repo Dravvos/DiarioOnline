@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "7tNtRXqaZn8hxpfjGh+G2gMYzhvDb8ynssYgAQXIiY0=",
+  "Hash": "21u/ctY2iQrwCTFAz96aOWvf6BawF3cMAw41GMOr78E=",
   "Source": "DiarioOnline.API",
   "BasePath": "_content/DiarioOnline.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }
