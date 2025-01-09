@@ -14,11 +14,11 @@ namespace DiarioOnline.Web.Pages
         public SignupModel(IConfiguration configuration)
         {
             _configuration = configuration;
-        }        
+        }
 
         [BindProperty]
         public UsuarioDTO Usuario { get; set; } = default!;
-        
+
         public IActionResult OnGet()
         {
             return Page();
@@ -32,7 +32,7 @@ namespace DiarioOnline.Web.Pages
                 return Page();
             }
             var res = BaseProxy<string>.Post(HttpContext, Services.Services.Api(_configuration, @"Authentication/Signup"), JsonConvert.SerializeObject(Usuario), false);
-            if (res.StatusCode == 200)
+            if (res.StatusCode == 200 || res.StatusCode == 201)
             {
                 return RedirectToPage("Login");
             }

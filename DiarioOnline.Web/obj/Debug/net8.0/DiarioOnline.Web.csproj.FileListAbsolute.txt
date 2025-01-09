@@ -375,7 +375,6 @@ D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Web\bin\Debug\
 D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Web\bin\Debug\net8.0\System.Composition.TypedParts.dll
 D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Web\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
 D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Web\bin\Debug\net8.0\System.Drawing.Common.dll
-D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Web\bin\Debug\net8.0\System.Formats.Asn1.dll
 D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Web\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Web\bin\Debug\net8.0\System.Memory.Data.dll
 D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Web\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
@@ -565,3 +564,13 @@ D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Web\obj\Debug\
 D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Web\obj\Debug\net8.0\DiarioOnline.Web.genruntimeconfig.cache
 D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Web\obj\Debug\net8.0\ref\DiarioOnline.Web.dll
 D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Web\obj\Debug\net8.0\DiarioOnline.Web.sourcelink.json
+D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Web\bin\Debug\net8.0\DiarioOnline.Web.staticwebassets.endpoints.json
+D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Web\bin\Debug\net8.0\refs\Microsoft.Extensions.Caching.Memory.dll
+D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Web\bin\Debug\net8.0\refs\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Web\bin\Debug\net8.0\refs\Microsoft.Extensions.DependencyInjection.dll
+D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Web\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Web\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.dll
+D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Web\bin\Debug\net8.0\refs\System.Formats.Asn1.dll
+D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Web\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Web\obj\Debug\net8.0\staticwebassets\msbuild.DiarioOnline.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\Microsoft Visual Studio\source\repos\DiarioOnline\DiarioOnline.Web\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

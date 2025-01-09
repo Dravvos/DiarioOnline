@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "D:\\Microsoft Visual Studio\\source\\repos\\DiarioOnline\\DiarioOnline.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DiarioOnline.Web.bundle.scp.css",
-      "PackagePath": "staticwebassets\\DiarioOnline.Web.bundle.scp.css"
+      "PackagePath": "staticwebassets\\DiarioOnline.Web.nw5z6h2iin.bundle.scp.css"
     },
     {
       "Id": "D:\\Microsoft Visual Studio\\source\\repos\\DiarioOnline\\DiarioOnline.Web\\wwwroot\\css\\login.css",
@@ -383,6 +383,10 @@
     {
       "Id": "D:\\Microsoft Visual Studio\\source\\repos\\DiarioOnline\\DiarioOnline.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.DiarioOnline.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.DiarioOnline.Web.Microsoft.AspNetCore.StaticWebAssets.props",
