@@ -10,7 +10,7 @@ namespace DiarioOnline.Data.Models
     {
         public Guid Id { get; set; }
         public Guid UsuarioId { get; set; }
-        public DateTime DataInclusao { private get; set; }
-        public DateTime? DataAlteracao { private get; set; }
+        public DateTime DataInclusao { get; set; }
+        public DateTime? DataAlteracao { get; set; }
     }
 }
