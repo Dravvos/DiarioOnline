@@ -23,7 +23,7 @@
                                 <img class="timeline-image" src="data:image/jpg;base64,@item.MidiaRegistroBase64" />
                             </div>
                         }<br />
-                        <span class="date">@item.DataInclusao</span>
+                        <span class="date">@item.DataInclusao.ToLocalTime()</span>
                         <div class="d-flex justify-content-end">
                             <a class="btn text-warning fs-3" asp-page="./Edit" asp-route-id="@item.Id"><i class="fa fa-pencil"></i></a>
                             <button id="btnDelete" type="submit" asp-page-handler="delete" asp-route-id="@item.Id" class="text-danger fs-3 btn"><i class="fa fa-trash"></i></button>

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DiarioOnline.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a0304587dcc7a3d4512a5cd1bf1bb95ff58b0f0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+31ced4d49c3ea6f63769602eabf8838710476174")]
 [assembly: System.Reflection.AssemblyProductAttribute("DiarioOnline.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DiarioOnline.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
